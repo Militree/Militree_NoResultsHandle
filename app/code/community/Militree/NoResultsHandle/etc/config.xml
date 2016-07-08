@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Militree_NoResultsHandle>
+      <version>0.1.0</version>
+    </Militree_NoResultsHandle>
+  </modules>
+  <frontend>
+    <events>
+      <controller_action_layout_load_before>
+        <observers>
+          <militree_nohandle_layout_load>
+            <class>Militree_NoResultsHandle_Model_Observer</class>
+            <method>controllerActionLayoutLoadBefore</method>
+          </militree_nohandle_layout_load>
+        </observers>
+      </controller_action_layout_load_before>
+    </events>
+  </frontend>
+</config>
